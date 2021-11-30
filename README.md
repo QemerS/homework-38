@@ -1,1 +1,1 @@
-# homework-38
+# Flex, responsiveness, media query, sass intro
