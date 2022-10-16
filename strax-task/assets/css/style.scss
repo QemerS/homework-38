@@ -1,0 +1,14 @@
+@import 'colors';
+@import 'mixins';
+.img-container-1 {
+    @include img-c ($color: $color-1, $dark-color: $color-1-dark);
+}
+.img-container-2 {
+    @include img-c ($color: $color-2, $dark-color: $color-2-dark);
+}
+.img-container-3 {
+    @include img-c ($color: $color-3, $dark-color: $color-3-dark);
+}
+.img-container-4 {
+    @include img-c ($color: $color-4, $dark-color: $color-4-dark);
+}
