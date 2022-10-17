@@ -1,11 +1,50 @@
+@import 'colors';
 @mixin img-c ($color, $dark-color) {
     border: 3px solid $color;
     transition: all 0.5s;
     border-radius: 10px;
+    position: relative;
     & + .card-body> .profession {
         color: $dark-color;
     }
     &:hover {
         border: 3px solid $dark-color;
+        & > .sosial-wrapper > a {
+            // transition: all 0.4s ease-in-out;
+            animation-name: fade-up;
+            animation-duration: 5s;
+            opacity: 0;
+            visibility: none;
+            @keyframes fade-up {
+                from {
+                    opacity: 0;
+                    visibility: none;
+                }
+                to {
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+        }
     }
+    & > .sosial-wrapper > a {
+        color: $color-3-dark;
+        background-color: white;
+        display: inline-block;
+        width: 25px;
+        opacity: 0;
+        visibility: none;
+        // transition-property: all 0.4s;
+        &:hover {
+            background-color: $dark-color;
+            color: white;
+        }
+    }
+    & > .sosial-wrapper {
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+    }
+    
 }
