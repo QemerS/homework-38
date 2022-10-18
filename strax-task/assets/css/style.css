@@ -10,32 +10,53 @@
   color: #ff612f;
 }
 
-.img-container-1 > .sosial-wrapper > * {
+.img-container-1:hover {
+  border: 3px solid #ff612f;
+}
+
+.img-container-1:hover > .sosial-wrapper > a {
+  -webkit-animation-name: fade-up;
+          animation-name: fade-up;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  opacity: 0;
+  visibility: none;
+}
+
+@-webkit-keyframes fade-up {
+  from {
+    opacity: 0;
+    visibility: none;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    visibility: none;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.img-container-1 > .sosial-wrapper > a {
   color: #080a3c;
   background-color: white;
   display: inline-block;
   width: 25px;
   opacity: 0;
   visibility: none;
-  -webkit-transition-property: all 0.4s;
-  transition-property: all 0.4s;
 }
 
-.img-container-1 > .sosial-wrapper > *:hover {
+.img-container-1 > .sosial-wrapper > a:hover {
   background-color: #ff612f;
-  opacity: 1;
-  visibility: visible;
-}
-
-.img-container-1:hover {
-  border: 3px solid #ff612f;
-}
-
-.img-container-1:hover > .sosial-wrapper > * {
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-  visibility: visible;
-  opacity: 1;
+  color: white;
 }
 
 .img-container-1 > .sosial-wrapper {
@@ -57,32 +78,42 @@
   color: #13c4a1;
 }
 
-.img-container-2 > .sosial-wrapper > * {
+.img-container-2:hover {
+  border: 3px solid #13c4a1;
+}
+
+.img-container-2:hover > .sosial-wrapper > a {
+  -webkit-animation-name: fade-up;
+          animation-name: fade-up;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  opacity: 0;
+  visibility: none;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    visibility: none;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.img-container-2 > .sosial-wrapper > a {
   color: #080a3c;
   background-color: white;
   display: inline-block;
   width: 25px;
   opacity: 0;
   visibility: none;
-  -webkit-transition-property: all 0.4s;
-  transition-property: all 0.4s;
 }
 
-.img-container-2 > .sosial-wrapper > *:hover {
+.img-container-2 > .sosial-wrapper > a:hover {
   background-color: #13c4a1;
-  opacity: 1;
-  visibility: visible;
-}
-
-.img-container-2:hover {
-  border: 3px solid #13c4a1;
-}
-
-.img-container-2:hover > .sosial-wrapper > * {
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-  visibility: visible;
-  opacity: 1;
+  color: white;
 }
 
 .img-container-2 > .sosial-wrapper {
@@ -104,32 +135,42 @@
   color: #080a3c;
 }
 
-.img-container-3 > .sosial-wrapper > * {
+.img-container-3:hover {
+  border: 3px solid #080a3c;
+}
+
+.img-container-3:hover > .sosial-wrapper > a {
+  -webkit-animation-name: fade-up;
+          animation-name: fade-up;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  opacity: 0;
+  visibility: none;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    visibility: none;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.img-container-3 > .sosial-wrapper > a {
   color: #080a3c;
   background-color: white;
   display: inline-block;
   width: 25px;
   opacity: 0;
   visibility: none;
-  -webkit-transition-property: all 0.4s;
-  transition-property: all 0.4s;
 }
 
-.img-container-3 > .sosial-wrapper > *:hover {
+.img-container-3 > .sosial-wrapper > a:hover {
   background-color: #080a3c;
-  opacity: 1;
-  visibility: visible;
-}
-
-.img-container-3:hover {
-  border: 3px solid #080a3c;
-}
-
-.img-container-3:hover > .sosial-wrapper > * {
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-  visibility: visible;
-  opacity: 1;
+  color: white;
 }
 
 .img-container-3 > .sosial-wrapper {
@@ -151,32 +192,42 @@
   color: #fc4c86;
 }
 
-.img-container-4 > .sosial-wrapper > * {
+.img-container-4:hover {
+  border: 3px solid #fc4c86;
+}
+
+.img-container-4:hover > .sosial-wrapper > a {
+  -webkit-animation-name: fade-up;
+          animation-name: fade-up;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  opacity: 0;
+  visibility: none;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    visibility: none;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.img-container-4 > .sosial-wrapper > a {
   color: #080a3c;
   background-color: white;
   display: inline-block;
   width: 25px;
   opacity: 0;
   visibility: none;
-  -webkit-transition-property: all 0.4s;
-  transition-property: all 0.4s;
 }
 
-.img-container-4 > .sosial-wrapper > *:hover {
+.img-container-4 > .sosial-wrapper > a:hover {
   background-color: #fc4c86;
-  opacity: 1;
-  visibility: visible;
-}
-
-.img-container-4:hover {
-  border: 3px solid #fc4c86;
-}
-
-.img-container-4:hover > .sosial-wrapper > * {
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-  visibility: visible;
-  opacity: 1;
+  color: white;
 }
 
 .img-container-4 > .sosial-wrapper {
