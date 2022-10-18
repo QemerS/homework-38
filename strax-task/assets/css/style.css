@@ -1,62 +1,13 @@
 .img-container-1 {
   border: 3px solid #ffdacf;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
   border-radius: 10px;
   position: relative;
 }
 
 .img-container-1 + .card-body > .profession {
   color: #ff612f;
-}
-
-.img-container-1:hover {
-  border: 3px solid #ff612f;
-}
-
-.img-container-1:hover > .sosial-wrapper > a {
-  -webkit-animation-name: fade-up;
-          animation-name: fade-up;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  opacity: 0;
-  visibility: none;
-}
-
-@-webkit-keyframes fade-up {
-  from {
-    opacity: 0;
-    visibility: none;
-  }
-  to {
-    visibility: visible;
-    opacity: 1;
-  }
-}
-
-@keyframes fade-up {
-  from {
-    opacity: 0;
-    visibility: none;
-  }
-  to {
-    visibility: visible;
-    opacity: 1;
-  }
-}
-
-.img-container-1 > .sosial-wrapper > a {
-  color: #080a3c;
-  background-color: white;
-  display: inline-block;
-  width: 25px;
-  opacity: 0;
-  visibility: none;
-}
-
-.img-container-1 > .sosial-wrapper > a:hover {
-  background-color: #ff612f;
-  color: white;
 }
 
 .img-container-1 > .sosial-wrapper {
@@ -66,54 +17,41 @@
   right: 0;
 }
 
-.img-container-2 {
-  border: 3px solid #bce9e5;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  border-radius: 10px;
-  position: relative;
-}
-
-.img-container-2 + .card-body > .profession {
-  color: #13c4a1;
-}
-
-.img-container-2:hover {
-  border: 3px solid #13c4a1;
-}
-
-.img-container-2:hover > .sosial-wrapper > a {
-  -webkit-animation-name: fade-up;
-          animation-name: fade-up;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  opacity: 0;
-  visibility: none;
-}
-
-@keyframes fade-up {
-  from {
-    opacity: 0;
-    visibility: none;
-  }
-  to {
-    visibility: visible;
-    opacity: 1;
-  }
-}
-
-.img-container-2 > .sosial-wrapper > a {
+.img-container-1 > .sosial-wrapper > a {
   color: #080a3c;
   background-color: white;
   display: inline-block;
   width: 25px;
   opacity: 0;
   visibility: none;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
-.img-container-2 > .sosial-wrapper > a:hover {
-  background-color: #13c4a1;
+.img-container-1 > .sosial-wrapper > a:hover {
+  background-color: #ff612f;
   color: white;
+}
+
+.img-container-1:hover {
+  border: 3px solid #ff612f;
+}
+
+.img-container-1:hover > .sosial-wrapper > a {
+  opacity: 1;
+  visibility: visible;
+}
+
+.img-container-2 {
+  border: 3px solid #bce9e5;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  border-radius: 10px;
+  position: relative;
+}
+
+.img-container-2 + .card-body > .profession {
+  color: #13c4a1;
 }
 
 .img-container-2 > .sosial-wrapper {
@@ -123,54 +61,41 @@
   right: 0;
 }
 
-.img-container-3 {
-  border: 3px solid #b2b3c3;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  border-radius: 10px;
-  position: relative;
-}
-
-.img-container-3 + .card-body > .profession {
-  color: #080a3c;
-}
-
-.img-container-3:hover {
-  border: 3px solid #080a3c;
-}
-
-.img-container-3:hover > .sosial-wrapper > a {
-  -webkit-animation-name: fade-up;
-          animation-name: fade-up;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  opacity: 0;
-  visibility: none;
-}
-
-@keyframes fade-up {
-  from {
-    opacity: 0;
-    visibility: none;
-  }
-  to {
-    visibility: visible;
-    opacity: 1;
-  }
-}
-
-.img-container-3 > .sosial-wrapper > a {
+.img-container-2 > .sosial-wrapper > a {
   color: #080a3c;
   background-color: white;
   display: inline-block;
   width: 25px;
   opacity: 0;
   visibility: none;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
-.img-container-3 > .sosial-wrapper > a:hover {
-  background-color: #080a3c;
+.img-container-2 > .sosial-wrapper > a:hover {
+  background-color: #13c4a1;
   color: white;
+}
+
+.img-container-2:hover {
+  border: 3px solid #13c4a1;
+}
+
+.img-container-2:hover > .sosial-wrapper > a {
+  opacity: 1;
+  visibility: visible;
+}
+
+.img-container-3 {
+  border: 3px solid #b2b3c3;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  border-radius: 10px;
+  position: relative;
+}
+
+.img-container-3 + .card-body > .profession {
+  color: #080a3c;
 }
 
 .img-container-3 > .sosial-wrapper {
@@ -180,10 +105,35 @@
   right: 0;
 }
 
+.img-container-3 > .sosial-wrapper > a {
+  color: #080a3c;
+  background-color: white;
+  display: inline-block;
+  width: 25px;
+  opacity: 0;
+  visibility: none;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.img-container-3 > .sosial-wrapper > a:hover {
+  background-color: #080a3c;
+  color: white;
+}
+
+.img-container-3:hover {
+  border: 3px solid #080a3c;
+}
+
+.img-container-3:hover > .sosial-wrapper > a {
+  opacity: 1;
+  visibility: visible;
+}
+
 .img-container-4 {
   border: 3px solid #fed2e1;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
   border-radius: 10px;
   position: relative;
 }
@@ -192,28 +142,11 @@
   color: #fc4c86;
 }
 
-.img-container-4:hover {
-  border: 3px solid #fc4c86;
-}
-
-.img-container-4:hover > .sosial-wrapper > a {
-  -webkit-animation-name: fade-up;
-          animation-name: fade-up;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  opacity: 0;
-  visibility: none;
-}
-
-@keyframes fade-up {
-  from {
-    opacity: 0;
-    visibility: none;
-  }
-  to {
-    visibility: visible;
-    opacity: 1;
-  }
+.img-container-4 > .sosial-wrapper {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
 }
 
 .img-container-4 > .sosial-wrapper > a {
@@ -223,6 +156,8 @@
   width: 25px;
   opacity: 0;
   visibility: none;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .img-container-4 > .sosial-wrapper > a:hover {
@@ -230,10 +165,12 @@
   color: white;
 }
 
-.img-container-4 > .sosial-wrapper {
-  position: absolute;
-  bottom: 10px;
-  left: 0;
-  right: 0;
+.img-container-4:hover {
+  border: 3px solid #fc4c86;
+}
+
+.img-container-4:hover > .sosial-wrapper > a {
+  opacity: 1;
+  visibility: visible;
 }
 /*# sourceMappingURL=style.css.map */
