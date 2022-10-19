@@ -9,28 +9,39 @@
     }
     & > .sosial-wrapper {
         position: absolute;
-        bottom: 10px;
+        bottom: 0;
         left: 0;
         right: 0;
     }
-    & > .sosial-wrapper > a {
+    & > .sosial-wrapper > * {
         color: $color-3-dark;
         background-color: white;
         display: inline-block;
         width: 25px;
         opacity: 0;
-        visibility: none;
         transition: all 0.5s ease-in-out;
         &:hover {
             background-color: $dark-color;
             color: white;
         }
     } 
+    & > .sosial-wrapper > .link-1 {
+        transition-delay: 0.1s;
+    }
+    & > .sosial-wrapper > .link-2 {
+        transition-delay: 0.2s;
+    }
+    & > .sosial-wrapper > .link-3 {
+        transition-delay: 0.3s;
+    }
+    & > .sosial-wrapper > .link-4 {
+        transition-delay: 0.4s;
+    }
     &:hover {
         border: 3px solid $dark-color;
-        & > .sosial-wrapper > a {
+        & > .sosial-wrapper > * {
             opacity: 1;
-            visibility: visible;
+            transform: translateY(-20px);
         }
     }
 }
