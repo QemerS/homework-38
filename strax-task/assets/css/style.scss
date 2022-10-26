@@ -11,3 +11,36 @@
 .img-container-4 {
     @include img-c ($color: $color-4, $dark-color: $color-4-dark);
 }
+.img-container {
+    transition: all 0.5s ease-out;
+    border-radius: 10px;
+    position: relative;
+    & > .sosial-wrapper {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    & > .sosial-wrapper > * {
+        background-color: white;
+        display: inline-block;
+        width: 25px;
+        opacity: 0;
+        transition: all 0.5s ease-in-out;
+        &:hover {
+            color: white;
+        }
+    } 
+    & > .sosial-wrapper > .link-1 {
+        transition-delay: 0.1s;
+    }
+    & > .sosial-wrapper > .link-2 {
+        transition-delay: 0.2s;
+    }
+    & > .sosial-wrapper > .link-3 {
+        transition-delay: 0.3s;
+    }
+    & > .sosial-wrapper > .link-4 {
+        transition-delay: 0.4s;
+    }
+}
